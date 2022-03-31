@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { changeFilter } from "../../redux/contacts/contactsActions"
+import { changeFilter } from '../../redux/contacts/contactsActions';
 import { getFilter } from 'redux/contacts/contactsSelectors';
-import style from "./Filter.module.css";
+import style from './Filter.module.css';
 
 const Filter = () => {
   const isLoading = useSelector(state => state.contacts.isLoading);
@@ -20,6 +20,4 @@ const Filter = () => {
   );
 };
 
-
-
-export default Filter; 
+export default Filter;
